@@ -1,0 +1,55 @@
+name: fin_money
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  path: ^1.8.2
+  path_provider: ^2.0.15
+  flutter_svg: ^1.1.6
+  intl: ^0.18.1
+  smooth_page_indicator: ^1.0.0+2
+  carousel_slider: ^4.2.1
+  collection: ^1.17.2
+  get: ^4.6.6
+
+dev_dependencies:
+  change_app_package_name: ^1.1.0
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/veegil-icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/images/veegil-icon.png"
+    background_color: "#FFF2CD14"
+    theme_color: "#FFF2CD14"
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Bold.ttf
+        - asset: assets/fonts/Lato-Regular.ttf
+
+  assets:
+    - assets/images/
+    - assets/icons/
