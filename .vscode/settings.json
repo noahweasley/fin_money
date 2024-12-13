@@ -1,3 +1,6 @@
 {
-    "explorer.excludeGitIgnore": true
+    "explorer.excludeGitIgnore": false,
+    "cSpell.words": [
+        "precache"
+    ]
 }

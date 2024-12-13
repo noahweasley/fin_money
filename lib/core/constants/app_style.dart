@@ -1,9 +1,7 @@
 import 'package:fin_money/core/constants/app_font.dart';
 import 'package:fin_money/core/constants/colors.dart';
 import 'package:fin_money/core/constants/dimensions.dart';
-import 'package:fin_money/core/utilities/extensions/size_extensions.dart';
 import 'package:flutter/material.dart';
-
 
 extension StyleExtension on TextStyle {
   /// make text bold
@@ -63,8 +61,8 @@ class AppStyle {
   /// Font Size: 96.0,
   /// Font Weight: FontWeight.w300,
   /// Letter Spacing: -1.5,
-  static TextStyle headline1 = TextStyle(
-    fontSize: 94.0.sp,
+  static TextStyle headline1 = const TextStyle(
+    fontSize: 94.0,
     fontWeight: FontWeight.w300,
     letterSpacing: -1.5,
   );
@@ -106,8 +104,8 @@ class AppStyle {
   /// Font Size: 60.0
   /// Font Weight: FontWeight.w300
   /// Letter Spacing: -0.5
-  static TextStyle headline2 = TextStyle(
-    fontSize: 58.0.sp,
+  static TextStyle headline2 = const TextStyle(
+    fontSize: 58.0,
     fontWeight: FontWeight.w300,
     letterSpacing: -0.5,
   );
@@ -150,7 +148,7 @@ class AppStyle {
   /// Font Weight: FontWeight.normal,
   /// Letter Spacing: 0.0,
   static TextStyle headline3 = baseTextStyle.copyWith(
-    fontSize: 46.0.sp,
+    fontSize: 46.0,
     fontWeight: FontWeight.normal,
     letterSpacing: -0.5,
   );
@@ -201,7 +199,7 @@ class AppStyle {
   /// Font Weight: FontWeight.normal,
   /// Letter Spacing: 0.25,
   static TextStyle headline4 = baseTextStyle.copyWith(
-    fontSize: 32.0.sp,
+    fontSize: 32.0,
     fontWeight: FontWeight.normal,
     letterSpacing: 0.25,
   );
@@ -244,7 +242,7 @@ class AppStyle {
   /// Font Weight: FontWeight.normal,
   /// Letter Spacing: 0.0,
   static TextStyle headline5 = baseTextStyle.copyWith(
-    fontSize: 24.0.sp,
+    fontSize: 24.0,
     fontWeight: FontWeight.normal,
     letterSpacing: 0.0,
   );
@@ -287,7 +285,7 @@ class AppStyle {
   /// Font Weight: FontWeight.w500,
   /// Letter Spacing: 0.15,
   static TextStyle headline6 = baseTextStyle.copyWith(
-    fontSize: 22.0.sp,
+    fontSize: 22.0,
     fontWeight: FontWeight.w400,
     letterSpacing: 0.15,
   );
@@ -330,7 +328,7 @@ class AppStyle {
   /// Font Weight: FontWeight.w500,
   /// Letter Spacing: 0.15,
   static TextStyle title = baseTextStyle.copyWith(
-    fontSize: 18.0.sp,
+    fontSize: 18.0,
     fontWeight: FontWeight.w400,
     letterSpacing: 0.15,
   );
@@ -405,7 +403,7 @@ class AppStyle {
   /// Font Weight: FontWeight.normal,
   /// Letter Spacing: 0.15,
   static TextStyle subtitle1 = baseTextStyle.copyWith(
-    fontSize: 16.0.sp,
+    fontSize: 16.0,
     fontWeight: FontWeight.w400,
     letterSpacing: 0.15,
   );
@@ -476,7 +474,7 @@ class AppStyle {
 
   /// Text style for subtitle2.
   static TextStyle subtitle2 = baseTextStyle.copyWith(
-    fontSize: 14.0.sp,
+    fontSize: 14.0,
     fontWeight: FontWeight.w500,
     letterSpacing: 0.1,
   );
@@ -514,7 +512,7 @@ class AppStyle {
 
   /// Text style for body1.
   static TextStyle body1 = baseTextStyle.copyWith(
-    fontSize: 16.0.sp,
+    fontSize: 16.0,
     fontWeight: FontWeight.normal,
     letterSpacing: 0.5,
   );
@@ -552,7 +550,7 @@ class AppStyle {
 
   /// Text style for body2.
   static TextStyle body2 = baseTextStyle.copyWith(
-    fontSize: 14.0.sp,
+    fontSize: 14.0,
     fontWeight: FontWeight.normal,
     letterSpacing: 0.25,
   );
@@ -582,7 +580,7 @@ class AppStyle {
 
   /// Text style for button.
   static TextStyle button = baseTextStyle.copyWith(
-    fontSize: 14.0.sp,
+    fontSize: 14.0,
     fontWeight: FontWeight.normal,
     letterSpacing: 0.8,
   );
@@ -612,7 +610,7 @@ class AppStyle {
 
   /// Text style for caption.
   static TextStyle caption = baseTextStyle.copyWith(
-    fontSize: 14.0.sp,
+    fontSize: 14.0,
     fontWeight: FontWeight.normal,
     letterSpacing: 0.4,
   );
@@ -650,7 +648,7 @@ class AppStyle {
 
   /// Text style for overline.
   static TextStyle overline = baseTextStyle.copyWith(
-    fontSize: 12.0.sp,
+    fontSize: 12.0,
     fontWeight: FontWeight.normal,
     letterSpacing: 1.5,
   );

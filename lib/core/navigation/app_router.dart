@@ -1,8 +1,10 @@
+import 'package:fin_money/core/bindings/main_binding.dart';
+import 'package:fin_money/core/constants/database.dart';
 import 'package:fin_money/core/navigation/app_routes.dart';
-import 'package:fin_money/features/get_started/screen/landing_page_screen.dart';
+import 'package:fin_money/features/main/screen/landing_page_screen.dart';
 import 'package:fin_money/features/onboarding/screens/onboarding_screen.dart';
-import 'package:fin_money/features/shared/bindings/main_binding.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
 class AppRouter {
   static final pages = [
@@ -21,6 +23,8 @@ class AppRouter {
   ];
 
   static String get initialRoute {
+    // ignore: unused_local_variable
+    final isUserOnboard = GetStorage().read(DatabaseKey.isUserOnboard) ?? false;
     return Routes.onboarding;
   }
 }

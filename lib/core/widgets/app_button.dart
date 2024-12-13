@@ -1,7 +1,6 @@
 import 'package:fin_money/core/constants/app_style.dart';
 import 'package:fin_money/core/constants/colors.dart';
 import 'package:fin_money/core/constants/dimensions.dart';
-import 'package:fin_money/core/utilities/extensions/size_extensions.dart';
 import 'package:fin_money/core/utilities/extensions/widget_extension.dart';
 import 'package:flutter/material.dart';
 
@@ -41,7 +40,7 @@ class AppButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.maxFinite,
-      height: height ?? 47.sp,
+      height: height ?? 47,
       child: Material(
         color: buttonColor,
         shape: RoundedRectangleBorder(
@@ -69,8 +68,8 @@ class AppButton extends StatelessWidget {
                 ? const CircularProgressIndicator(
                     valueColor: AlwaysStoppedAnimation<Color>(AppColor.background),
                   ).withSize(
-                    width: 20.sp,
-                    height: 20.sp,
+                    width: 20,
+                    height: 20,
                   )
                 : Text(
                     text,

@@ -2,7 +2,6 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:fin_money/core/constants/app_style.dart';
 import 'package:fin_money/core/constants/colors.dart';
 import 'package:fin_money/core/constants/dimensions.dart';
-import 'package:fin_money/core/utilities/size_config.dart';
 import 'package:fin_money/core/widgets/annotated_status_bar.dart';
 import 'package:fin_money/core/widgets/app_button.dart';
 import 'package:fin_money/features/onboarding/controllers/onboarding_controller.dart';
@@ -15,8 +14,6 @@ class OnBoardingScreen extends GetView<OnBoardingController> {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig.init(context);
-
     return AnnotatedStatusBar(
       color: Colors.white,
       brightness: Brightness.light,
@@ -43,7 +40,7 @@ class OnBoardingScreen extends GetView<OnBoardingController> {
                           return Column(
                             children: [
                               Padding(
-                                padding: const EdgeInsets.all(Dimensions.space3),
+                                padding: const EdgeInsets.all(Dimensions.space2),
                                 child: Text(
                                   item.title,
                                   textAlign: TextAlign.center,

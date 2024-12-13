@@ -129,7 +129,7 @@ class Notifiers {
   }) {
     final color = type == NotificationType.warning
         ? AppColor.red
-        : (type == NotificationType.success ? AppColor.green : AppColor.primaryDark);
+        : (type == NotificationType.success ? AppColor.green : AppColor.blueDark);
 
     return Get.showSnackbar(
       GetSnackBar(

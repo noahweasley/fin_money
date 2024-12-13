@@ -18,10 +18,10 @@ class AnnotatedStatusBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle(
-        statusBarColor: color ?? AppColor.systemOverlayColor,
+        statusBarColor: color ?? Colors.white,
         statusBarBrightness: brightness ?? Brightness.dark, // For iOS
         statusBarIconBrightness: Brightness.dark, // For Android
-        systemNavigationBarColor: AppColor.systemOverlayColor,
+        systemNavigationBarColor: Colors.white,
         systemNavigationBarIconBrightness: brightness ?? Brightness.dark,
       ),
       child: child,

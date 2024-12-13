@@ -1,3 +1,3 @@
 class Strings {
-// strings
+  static String appName = 'Fin Money';
 }

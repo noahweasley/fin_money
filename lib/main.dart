@@ -1,6 +1,7 @@
 import 'package:fin_money/core/app_init.dart';
+import 'package:fin_money/core/bindings/main_binding.dart';
+import 'package:fin_money/core/constants/strings.dart';
 import 'package:fin_money/core/navigation/navigation.dart';
-import 'package:fin_money/features/shared/bindings/main_binding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       initialBinding: MainBinding(),
       initialRoute: AppRouter.initialRoute,
       getPages: AppRouter.pages,
-      title: 'Fin Money',
+      title: Strings.appName,
     );
   }
 }

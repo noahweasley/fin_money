@@ -4,4 +4,5 @@ class Assets {
   static const String cashPayment = 'assets/images/cash-payment.png';
   static const String transferMoney = 'assets/images/transfer-money.png';
   static const String topup = 'assets/images/top-up.png';
+  static String peopleWaving = 'assets/images/people_waving.png';
 }
